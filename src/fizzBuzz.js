@@ -11,7 +11,8 @@ function isDivisibleByFifteen(num) {
 }
 
 function fizzbuzz(num) {
-  if(isDivisibleByFifteen(num)) {return 'FizzBuzz'}
+  if(isDivisibleByFifteen(num)) {return 'Fizzbuzz'}
   else if(isDivisibleByFive(num)) {return 'Buzz'}
   else if(isDivisibleByThree(num)) {return 'Fizz'}
+  else {return (num)}
 }

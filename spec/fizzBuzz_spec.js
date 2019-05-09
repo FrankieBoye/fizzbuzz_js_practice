@@ -2,7 +2,7 @@ describe('fizzbuzz', function() {
 
   var fizzbuzz;
 
-describe('knows when a number is', function() {
+describe('knows when a number', function() {
 
   it('is divisible by 3', function() {
     expect(isDivisibleByThree(3)).toBe(true);
@@ -16,11 +16,20 @@ describe('knows when a number is', function() {
     expect(isDivisibleByFifteen(15)).toBe(true);
   });
 
-});
-
-
-
-
-
+  });
 
 });
+
+  describe('Fizzbuzz game', function() {
+    it('fizz for 3', function() {
+      expect(fizzbuzz(3)).toEqual('Fizz');
+    });
+
+    it('buzz for 5', function() {
+      expect(fizzbuzz(5)).toEqual('Buzz');
+    });
+
+    it('FizzBuzz for 15', function() {
+      expect(fizzbuzz(15)).toEqual('Fizzbuzz');
+    });
+  });
